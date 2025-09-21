@@ -68,6 +68,12 @@
         function openDeepLink() {
             window.location = 'faapp://hseqmaster/safetynetdev_uat/api/v1/suite/applink/eyJldm5pcm9ubWVudCI6InRlc3Quc2FmZXR5bmV0LmRrL3NhZmV0eW5ldGRldl91YXQiLCJ0b2tlbiI6ImFzZHNnZHVnNjEyM2hqYXNiZmRhc2tiYWhzaGJuZGYifQ==';
         }
+
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                openDeepLink();
+            }, 3000);
+        });
     </script>
 </body>
 </html>
